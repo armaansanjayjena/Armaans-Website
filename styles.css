@@ -63,6 +63,8 @@ body {
     color: var(--primary-color);
     background: linear-gradient(135deg, #f0f8ff 0%, #e8f5e8 50%, #f0f8ff 100%);
     overflow-x: hidden;
+    /* Offset for fixed navigation so content isn't hidden under the header */
+    padding-top: 84px;
 }
 
 /* Navigation */
@@ -310,6 +312,8 @@ body {
 section {
     padding: var(--space-4xl) var(--space-lg);
     position: relative;
+    /* Ensure in-page anchors account for fixed header */
+    scroll-margin-top: 84px;
 }
 
 .section-content {
@@ -866,6 +870,13 @@ section {
     .nav-links {
         display: none;
     }
+    /* Slightly smaller offset on tablets/phones where nav is more compact */
+    body {
+        padding-top: 72px;
+    }
+    section {
+        scroll-margin-top: 72px;
+    }
     
     .hero-content {
         grid-template-columns: 1fr;
@@ -929,6 +940,13 @@ section {
 @media (max-width: 480px) {
     .hero {
         padding: var(--space-2xl) var(--space-md);
+    }
+    /* Tighter offset for very small devices */
+    body {
+        padding-top: 64px;
+    }
+    section {
+        scroll-margin-top: 64px;
     }
     
     section {
