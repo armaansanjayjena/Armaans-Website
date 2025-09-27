@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury 3BHK in Kharadi | Shelters Realty - Digital Realty</title>
+    <meta name="description" content="Modern 3BHK apartment in Kharadi, East Pune. 1500 sqft, ready to move, premium amenities. Contact Shelters Realty for viewing and more details.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏠</text></svg>">
+</head>
+<body class="property-detail-page">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">Shelters</span>
+                <span class="logo-accent">Realty</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="listings.html" class="nav-link">Properties</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="calculator.html" class="nav-link">Calculator</a>
+                <a href="agreements.html" class="nav-link">Agreements</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="theme-toggle-container">
+                <svg class="theme-icon sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12,8a4,4,0,1,0,4,4A4,4,0,0,0,12,8Zm0,7a3,3,0,1,1,3-3A3,3,0,0,1,12,15ZM12,4a1,1,0,0,0,1-1V2a1,1,0,0,0-2,0V3A1,1,0,0,0,12,4Zm0,16a1,1,0,0,0,1-1V19a1,1,0,0,0-2,0v1A1,1,0,0,0,12,20ZM20,12a1,1,0,0,0-1,1h1a1,1,0,0,0,0-2H19A1,1,0,0,0,20,12ZM4,12a1,1,0,0,0-1,1H2a1,1,0,0,0,0-2H3A1,1,0,0,0,4,12ZM18.36,6.64a1,1,0,0,0-1.41,0L16.24,7.35a1,1,0,0,0,1.41,1.41L18.36,8.05A1,1,0,0,0,18.36,6.64ZM7.35,16.24a1,1,0,0,0-1.41,0L5.24,15.53a1,1,0,0,0,1.41-1.41L7.35,14.83A1,1,0,0,0,7.35,16.24Zm-.7-9.59a1,1,0,0,0,0,1.41L7.35,8.76A1,1,0,0,0,8.76,7.35L8.05,6.64A1,1,0,0,0,6.64,6.64Zm9.59.7a1,1,0,0,0,1.41,0l.71-.71a1,1,0,0,0-1.41-1.41l-.71.71A1,1,0,0,0,16.23,7.34Z"/></svg>
+                <span class="toggle-switch">
+                    <button class="toggle-thumb" id="theme-toggle" aria-label="Toggle theme"></button>
+                </span>
+                <svg class="theme-icon moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12,22A10,10,0,0,0,22,12c0-4-2.2-7.4-5.5-9.1a.5.5,0,0,0-.6.4A.5.5,0,0,0,16,4a8,8,0,0,1-8,8,.5.5,0,0,0-.4.6,9.9,9.9,0,0,0,4.8,7.8A.5.5,0,0,0,12,22Z"/></svg>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumbs -->
+    <section class="breadcrumbs">
+        <div class="container">
+            <nav class="breadcrumb-nav">
+                <a href="index.html">Home</a>
+                <span class="breadcrumb-separator">></span>
+                <a href="listings.html">Properties</a>
+                <span class="breadcrumb-separator">></span>
+                <span class="breadcrumb-current" id="breadcrumb-property-title">Loading...</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Property Details -->
+    <section class="property-details" id="property-detail-content" style="display: none;">
+        <div class="container">
+            <div class="property-layout">
+                <div class="property-main">
+                    <!-- Property Header -->
+                    <div class="property-header">
+                        <div class="property-title-section">
+                            <h1 class="property-title" id="property-title"></h1>
+                        </div>
+                        <div class="property-location">
+                            <span class="location-icon">📍</span>
+                            <span id="property-location"></span>
+                        </div>
+                        <div class="property-specs">
+                            <div class="spec-item">
+                                <span class="spec-icon">🛏️</span>
+                                <span id="property-bedrooms"></span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-icon">📐</span>
+                                <span id="property-size"></span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-icon">✅</span>
+                                <span id="property-status"></span>
+                            </div>
+                        </div>
+                        <div class="property-price" id="property-price"></div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="property-actions">
+                        <button class="action-btn secondary" id="contact-agent">
+                            <span>Contact Agent</span>
+                        </button>
+                        <button class="action-btn icon favorite-btn" id="save-property" aria-label="Save to Favorites">
+                            <span>💾</span>
+                        </button>
+                        <button class="action-btn icon" id="share-property">
+                            <span>📤</span>
+                        </button>
+                    </div>
+
+                    <!-- Property Gallery -->
+                    <div class="property-gallery">
+                        <!-- The new carousel will be rendered here by JavaScript -->
+                        <div class="gallery-carousel" id="gallery-carousel"></div>
+                    </div>
+
+                    <!-- Property Description -->
+                    <div class="property-description">
+                        <h2>Property Overview</h2>
+                        <p id="property-description"></p>
+                    </div>
+
+                    <!-- Features & Amenities -->
+                    <div class="property-features">
+                        <h2>Features & Amenities</h2>
+                        <div class="features-grid" id="amenities-grid">
+                            <!-- Amenities will be dynamically inserted here -->
+                        </div>
+                    </div>
+
+                    <!-- Map Location -->
+                    <div class="property-map">
+                        <h2>Location</h2>
+                        <div class="map-container">
+                            <div class="map-placeholder">
+                                <!-- This div is for the map background -->
+                            </div>
+                            <div class="location-overlay-card">
+                                <h3 id="map-location-title"></h3>
+                                <button class="map-button" id="map-button">View on Google Maps</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Sidebar -->
+                <div class="property-sidebar">
+                    <!-- Similar Properties -->
+                    <div class="similar-properties">
+                        <h3 id="similar-properties-title" style="display: none;">Similar Properties</h3>
+                        <div class="similar-list" id="similar-properties-list">
+                            <!-- Similar properties will be dynamically inserted here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Get Latest East Pune Listings</h2>
+                <p>Subscribe to receive exclusive property updates and market insights</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" class="newsletter-input">
+                    <button type="submit" class="newsletter-button">
+                        <span>Subscribe</span>
+                        <div class="button-pulse"></div>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Shelters Realty</h3>
+                    <p>Your trusted East Pune property experts with 30+ years of local experience and cutting-edge technology.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="listings.html">Properties</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="social-link">Facebook</a></li>
+                        <li><a href="#" class="social-link">LinkedIn</a></li>
+                        <li><a href="#" class="social-link">Instagram</a></li>
+                        <li><a href="https://wa.me/919860826918" class="social-link" target="_blank">WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Shelters Realty. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="favorites.js"></script>
+    <script src="property-detail.js"></script>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919860826918?text=Hi!%20I'm%20interested%20in%20your%20real%20estate%20services." class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="28" height="28" fill="currentColor"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.8 0-65.7-10.8-94.2-30.6l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5c-.1 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+    </a>
+</body>
+</html>

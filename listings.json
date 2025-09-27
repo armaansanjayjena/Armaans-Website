@@ -1,0 +1,18 @@
+{
+  "records": [
+    {
+      "id": "recTEST1",
+      "fields": {
+        "Title": "Test Apartment (Local)",
+        "Price": 10000000,
+        "Location": "Viman Nagar",
+        "Size (sqft)": 1200,
+        "Short Description": "This is a local test listing",
+        "Status": "Ready to Move",
+        "Image": [
+          { "url": "https://via.placeholder.com/600x400.png?text=Test" }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+<!--
+  This is an example of embedding an Airtable lead form.
+  You MUST replace 'https://airtable.com/embed/shrXXXX' with your actual
+  Airtable form's embed URL.
+-->
+<div id="lead-form-container"></div>
+
+<script src="/assets/airtable-prefill.js"></script>
+<script>
+  renderAirtableForm(
+    'lead-form-container',
+    'https://airtable.com/embed/shrXXXX', // <-- IMPORTANT: REPLACE WITH YOUR AIRTABLE EMBED URL
+    {
+      listingId: 'rec123', // Example record ID
+      source: 'property-detail'
+    }
+  );
+</script>
